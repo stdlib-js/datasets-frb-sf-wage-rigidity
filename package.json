@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/datasets-frb-sf-wage-rigidity",
+  "version": "0.0.0",
+  "description": "Wage rates for U.S. workers that have not changed jobs within the year.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/datasets-frb-sf-wage-rigidity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "datasets",
+    "dataset",
+    "data",
+    "wages",
+    "workers",
+    "pay",
+    "industry",
+    "work",
+    "salary",
+    "us",
+    "united",
+    "states",
+    "economics",
+    "growth",
+    "employment",
+    "labor",
+    "statistics",
+    "stats"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
