@@ -30,32 +30,30 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/datasets-frb-sf-wage-rigidity
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-wages = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.wages;
-})();
-</script>
+var wages = require( '@stdlib/datasets-frb-sf-wage-rigidity' );
 ```
 
 #### wages()
@@ -91,14 +89,9 @@ Each `array` element has the following fields:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/plot-sparklines-unicode-tristate@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Chart = require( '@stdlib/plot-sparklines-unicode-tristate' );
+var wages = require( '@stdlib/datasets-frb-sf-wage-rigidity' );
 
 var chart;
 var opts;
@@ -131,18 +124,80 @@ opts = {
 chart = new Chart( opts );
 
 console.log( chart.render() );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/datasets-frb-sf-wage-rigidity
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: frb-sf-wage-rigidity [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --format fmt          Output format: 'csv' or 'ndjson'.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+### Notes
+
+-   The CLI supports two output formats: comma-separated values ([CSV][csv]) and newline-delimited JSON ([NDJSON][ndjson]). The default output format is [CSV][csv].
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ frb-sf-wage-rigidity
+date,all_workers,hourly_workers,non_hourly_workers,less_than_high_school,high_school,some_college,college,construction,finance,manufacturing
+01/01/1980,,,,,,,,,,
+02/01/1980,,,,,,,,,,
+03/01/1980,,,,,,,,,,
+...
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- <license> -->
 
@@ -222,6 +277,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/datasets-frb-sf-wage-rigidity/tree/deno
 [umd-url]: https://github.com/stdlib-js/datasets-frb-sf-wage-rigidity/tree/umd
 [esm-url]: https://github.com/stdlib-js/datasets-frb-sf-wage-rigidity/tree/esm
+[branches-url]: https://github.com/stdlib-js/datasets-frb-sf-wage-rigidity/blob/main/branches.md
 
 [@frbsf:wagerigidity]: http://www.frbsf.org/economic-research/indicators-data/nominal-wage-rigidity/
 
