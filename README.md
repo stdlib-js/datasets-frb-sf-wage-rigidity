@@ -41,112 +41,17 @@ limitations under the License.
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/datasets-frb-sf-wage-rigidity
-```
 
-Alternatively,
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
-</section>
 
-<section class="usage">
-
-## Usage
-
-```javascript
-var wages = require( '@stdlib/datasets-frb-sf-wage-rigidity' );
-```
-
-#### wages()
-
-Returns [wage rates][@frbsf:wagerigidity] for U.S. workers that have not changed jobs within the year.
-
-```javascript
-var data = wages();
-// returns [{...},{...},...]
-```
-
-Each `array` element has the following fields:
-
--   **date**: collection date (month/day/year; e.g., `01/01/1980`).
--   **all_workers**: wage rates for hourly and non-hourly workers.
--   **hourly_workers**: wage rates for hourly workers.
--   **non_hourly_workers**: wage rates for non-hourly workers.
--   **less_than_high_school**: wage rates for workers with less than a high school education.
--   **high_school**: wage rates for workers with a high school education.
--   **some_college**: wage rates for workers with some college education.
--   **college**: wage rates for workers with a college education.
--   **construction**: wage rates for workers in the construction industry.
--   **finance**: wage rates for workers in the finance industry.
--   **manufacturing**: wage rates for workers in the manufacturing industry.
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var Chart = require( '@stdlib/plot-sparklines-unicode-tristate' );
-var wages = require( '@stdlib/datasets-frb-sf-wage-rigidity' );
-
-var chart;
-var opts;
-var data;
-var v1;
-var v2;
-var d;
-var i;
-
-data = wages();
-d = new Array( data.length );
-v1 = data[ 0 ].all_workers;
-for ( i = 1; i < data.length; i++ ) {
-    v2 = data[ i ].all_workers;
-    if ( v2 === null ) {
-        d[ i ] = NaN;
-    } else if ( v2 < v1 ) {
-        d[ i ] = -1;
-    } else if ( v2 > v1 ) {
-        d[ i ] = 1;
-    } else {
-        d[ i ] = 0;
-    }
-    v1 = v2;
-}
-
-opts = {
-    'data': d
-};
-chart = new Chart( opts );
-
-console.log( chart.render() );
-```
-
-</section>
-
-<!-- /.examples -->
-
-* * *
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -164,7 +69,7 @@ npm install -g @stdlib/datasets-frb-sf-wage-rigidity-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: frb-sf-wage-rigidity [options]
@@ -180,19 +85,11 @@ Options:
 
 <!-- /.usage -->
 
-<section class="notes">
 
-### Notes
-
--   The CLI supports two output formats: comma-separated values ([CSV][csv]) and newline-delimited JSON ([NDJSON][ndjson]). The default output format is [CSV][csv].
-
-</section>
-
-<!-- /.notes -->
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ frb-sf-wage-rigidity
@@ -225,6 +122,11 @@ The data files (databases) are licensed under an [Open Data Commons Attribution 
 
 <section class="related">
 
+## See Also
+
+-   <span class="package-name">[`@stdlib/datasets-frb-sf-wage-rigidity`][@stdlib/datasets-frb-sf-wage-rigidity]</span><span class="delimiter">: </span><span class="description">wage rates for U.S. workers that have not changed jobs within the year.</span>
+
+
 </section>
 
 <!-- /.related -->
@@ -242,7 +144,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -260,8 +162,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-frb-sf-wage-rigidity.svg
-[npm-url]: https://npmjs.org/package/@stdlib/datasets-frb-sf-wage-rigidity
+[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-frb-sf-wage-rigidity-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/datasets-frb-sf-wage-rigidity-cli
 
 [test-image]: https://github.com/stdlib-js/datasets-frb-sf-wage-rigidity/actions/workflows/test.yml/badge.svg?branch=v0.1.0
 [test-url]: https://github.com/stdlib-js/datasets-frb-sf-wage-rigidity/actions/workflows/test.yml?query=branch:v0.1.0
