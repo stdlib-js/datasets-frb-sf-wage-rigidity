@@ -48,6 +48,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import wages from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/datasets-frb-sf-wage-rigidity/tags). For example,
+
+```javascript
 import wages from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@v0.2.0-deno/mod.js';
 ```
 
@@ -86,7 +91,7 @@ Each `array` element has the following fields:
 
 ```javascript
 import Chart from 'https://cdn.jsdelivr.net/gh/stdlib-js/plot-sparklines-unicode-tristate@deno/mod.js';
-import wages from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@v0.2.0-deno/mod.js';
+import wages from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@deno/mod.js';
 
 var chart;
 var opts;
