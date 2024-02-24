@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import wages from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@esm/index.mjs';
+import wages from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@v0.2.1-esm/index.mjs';
 ```
 
 #### wages()
@@ -91,7 +91,7 @@ Each `array` element has the following fields:
 <script type="module">
 
 import Chart from 'https://cdn.jsdelivr.net/gh/stdlib-js/plot-sparklines-unicode-tristate@esm/index.mjs';
-import wages from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@esm/index.mjs';
+import wages from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@v0.2.1-esm/index.mjs';
 
 var chart;
 var opts;
