@@ -48,6 +48,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import wages from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/datasets-frb-sf-wage-rigidity/tags). For example,
+
+```javascript
 import wages from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@v0.2.1-esm/index.mjs';
 ```
 
@@ -91,7 +96,7 @@ Each `array` element has the following fields:
 <script type="module">
 
 import Chart from 'https://cdn.jsdelivr.net/gh/stdlib-js/plot-sparklines-unicode-tristate@esm/index.mjs';
-import wages from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@v0.2.1-esm/index.mjs';
+import wages from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-frb-sf-wage-rigidity@esm/index.mjs';
 
 var chart;
 var opts;
