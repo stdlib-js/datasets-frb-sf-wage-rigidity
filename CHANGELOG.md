@@ -4,7 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-01)
+## Unreleased (2025-12-16)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#9071](https://github.com/stdlib-js/stdlib/issues/9071)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +24,7 @@
 
 <details>
 
+-   [`dc19786`](https://github.com/stdlib-js/stdlib/commit/dc19786d428b7294fe0ade38313fafacc073c793) - **chore:** fix JavaScript lint errors [(#9077)](https://github.com/stdlib-js/stdlib/pull/9077) _(by Divyanshu)_
 -   [`c894b66`](https://github.com/stdlib-js/stdlib/commit/c894b664661bfb87286304b24dd5a1758ae482b7) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 
 </details>
@@ -24,8 +37,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Divyanshu
 -   Philipp Burckhardt
 
 </section>
